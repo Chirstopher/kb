@@ -7,25 +7,25 @@
 ### 1.2 空白范例
 #### 第一次推流
 * 通过 Android Studio 创建 Project
-![](../screenshots/sbs/sbs_new_project.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu1.png)
 
 * 设置 Application name, Company Domain, Package name, Project location
-![](screenshots/sbs/sbs_configure_new_project.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu2.png)
 
 * 选择 Target Android Devices
-![](screenshots/sbs/sbs_target_android_devices.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu3.png)
 
 * 选择 Empty Activity
-![](../screenshots/sbs/sbs_empty_activity.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu4.png)
 
 * 填写 Main Activity 信息，作为 android.intent.action.MAIN
-![](../screenshots/sbs/sbs_set_main_activity.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu5.png)
 
 * 完成创建
-![](../screenshots/sbs/sbs_new_project_done.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu6.png)
 
 * 加入 PLDroidCameraStreaming SDK 动态链接库和 JAR 依赖
-![](screenshots/sbs/sbs_import_jar_so.png)
+![](http://7xlm00.com1.z0.glb.clouddn.com/xiongjipu7.png)
 
 涉及的文件名如下：
 
