@@ -1,11 +1,4 @@
-# streams
 
-## 鉴权 Authorization
-
-```
-- allow: "user"
-- auths: ["qiniu/mac", "qbox/bearer"]
-```
 
 ## Stream API
 
@@ -22,7 +15,6 @@ publishKey 和 publishSecurity 继承自对应 Hub。
 
 ## 创建流
 
-> 该接口为遗留接口，兼容老 sdk 的调用。创建后要请求bc机房 zoned 创建流接口。
 
 ```
 POST /v1/streams
@@ -75,7 +67,6 @@ POST /v1/streams
 
 ## 列出流
 
-> 本接口不依赖 zoned 接口
 
 * `<HubName>`: 必选。
 * `<Status>`: 可选。只能使用connected。
@@ -157,7 +148,6 @@ GET /v1/streams?status=<Status>&hub=<HubName>&marker=<StartMarker>&limit=<LimitC
 
 ## 获取流
 
-> 本接口会根据 stream 的 region 信息，去对应 zoned 调用相应接口。
 
 ```
 GET /v1/streams/:streamId
@@ -199,7 +189,6 @@ GET /v1/streams/:streamId
 
 ## 更新流
 
-> 本接口会根据 stream 的 region 信息，去对应 zoned 调用相应接口。
 
 ```
 POST /v1/streams/:streamId
@@ -256,7 +245,6 @@ POST /v1/streams/:streamId
 
 ## 删除流
 
-> 本接口会根据 stream 的 region 信息，去对应 zoned 调用相应接口。
 
 ```
 DELETE /v1/streams/:streamId
@@ -276,7 +264,6 @@ DELETE /v1/streams/:streamId
 
 ## 获取流状态
 
-> 本接口会根据 stream 的 region 信息，去对应 zoned 调用相应接口。
 
 - Status
     - connected
@@ -367,7 +354,6 @@ POST /v1/streams/:streamId/saveas
 
 ## 获取历史推流信息
 
-> 本接口会根据 stream 的 region 信息，去对应 zoned 调用相应接口。
 
 ```
 GET /v1/streams/:streamId/segments?start=<StartUnixTimestamp>&end=<EndUnixTimestamp>&limit=<Limit>
@@ -410,7 +396,6 @@ GET /v1/streams/:streamId/segments?start=<StartUnixTimestamp>&end=<EndUnixTimest
 
 ## 截图
 
-> 本接口会根据 stream 的 region 信息，去对应 zoned 调用相应接口。
 
 ```
 POST /v1/streams/:streamId/snapshot
